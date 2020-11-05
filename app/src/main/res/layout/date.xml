@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Date">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#00ACC1"
+        android:gravity="center"
+        android:text="请选择月份"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:entries="@array/month"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:background="#00ACC1"
+        android:gravity="center"
+        android:text="请选择日期"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:entries="@array/date"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#FDD835"
+        android:onClick="jumpConsume"
+        android:text="查看" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="80dp"
+        android:background="#FDD835"
+        android:onClick="jumpMain"
+        android:text="返回" />
+
+</LinearLayout>
